@@ -12,7 +12,7 @@ struct DailyScrum: Identifiable {
     var title: String
     var attendees: [Attendee]
     var lengthInMinutes: Int
-    var lengtInminutesAsDouble: Double {
+    var lengtInMinutesAsDouble: Double {
         get {
             Double(lengthInMinutes)
         }
@@ -46,7 +46,7 @@ extension DailyScrum {
 }
 
 extension DailyScrum {
-    static let sampleDate: [DailyScrum] =
+    static let sampleData: [DailyScrum] =
     [
         DailyScrum(title: "Design",
                    attendees: ["Cathy", "Daisy", "Simon", "Jonathan"],
